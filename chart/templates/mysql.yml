@@ -14,9 +14,16 @@ spec:
       labels:
         app: backend
     spec:
+      volumes:
+      - name: mysqlpod-pvc
+        persistentVolumeClaim:
+          claimName: mysql-pvc
       containers:
       - name: mysql
         image: mysql:5.7
+        volumeMounts:
+        - mountPath: /var/lib/mysql
+          name: mysqlpod-pvc
         env:
         - name: MYSQL_ROOT_PASSWORD
           valueFrom:
