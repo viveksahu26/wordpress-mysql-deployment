@@ -9,7 +9,10 @@ Technologies used in this projects are Docker and Kubernetes.
 
 
 How to use this project.
-Step1: Clone it https://github.com/viveksahu26/wordpress-mysql-deployment.git
+Step1: Clone it 
+   
+    git clone https://github.com/viveksahu26/wordpress-mysql-deployment.git
+
 Step2: Start your Kubernetes Cluster.
 Step3: Install Helm in minikube: 
 
