@@ -6,9 +6,9 @@ metadata:
   name: wordpress-service
 spec:
   ports:
-  - port: 80
+  - port: {{.Values.servicewpPort}}
     protocol: TCP
-    targetPort: 80
+    targetPort: {{.Values.servicewpPort}}
   selector:
     app: frontend
   type: NodePort

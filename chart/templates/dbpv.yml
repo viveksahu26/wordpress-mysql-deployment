@@ -5,7 +5,7 @@ metadata:
 spec:
   storageClassName: ""
   capacity:  
-    storage: 10Gi
+    storage: {{ .Values.pvcStorage }}
   accessModes:
   - ReadWriteOnce
   hostPath:

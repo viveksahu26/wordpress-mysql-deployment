@@ -7,9 +7,9 @@ metadata:
   name: mysql-service
 spec:
   ports:
-  - port: 3306
+  - port: {{.Values.servicedbPort}}
     protocol: TCP
-    targetPort: 3306
+    targetPort: {{.Values.servicedbPort}}
   selector:
     app: backend
   type: NodePort
