@@ -55,5 +55,16 @@ Step7: To check it's running or not.
      http://<minikube_ip>:<wordpress_port>
        
 Step8: Choose language and Enter.
+Step9: 
+
+    Database Name: wpdb
+    Username: vivek
+    Password: redhat
+    Database Host: <minikube_ip>
+    
+Step10: Now create your blog.
+
+I think, it may be useful to you.
+Any problem just comment.
 
        
