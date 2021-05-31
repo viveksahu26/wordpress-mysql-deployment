@@ -14,14 +14,8 @@ spec:
       labels:
         app: frontend
     spec:
-      volumes:
-      - name: wppod-pvc
-        persistentVolumeClaim:
-          claimName: wordpress-pvc
       containers:
       - image: wordpress:5.1.1-php7.3-apache
         name: wordpress
-        volumeMounts:
-        - mountPath: /var/www/html
-          name: wppod-pvc
+        
         
