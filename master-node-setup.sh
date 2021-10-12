@@ -24,7 +24,7 @@ yum repolist
 echo "configuring repo for docker"
 cat <<EOF | sudo tee /etc/yum.repos.d/docker.repo
 [docker]
-https://download.docker.com/linux/centos/7/x86_64/stable
+baseurl=https://download.docker.com/linux/centos/7/x86_64/stable/
 gpgcheck=0
 EOF
 
