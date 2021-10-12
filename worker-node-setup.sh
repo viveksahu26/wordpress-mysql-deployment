@@ -60,7 +60,7 @@ systemctl restart docker
 
 docker info | grep -i cgroup
 
-yum install iproute-tc -
+yum install iproute-tc -y
 
 cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf
 net.bridge.bridge-nf-call-ip6tables = 1
