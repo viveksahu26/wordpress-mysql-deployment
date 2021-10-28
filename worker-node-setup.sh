@@ -8,6 +8,8 @@ EOF
 
 chmod +x  /etc/rc.d/rc.local
 
+# epel-release
+dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm 
 echo "configuring repo for yum"
 cat <<EOF | sudo tee /etc/yum.repos.d/rhel.repo
 [AppStream]
