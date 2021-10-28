@@ -1,3 +1,5 @@
+# https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-centos-7
+
 wget https://dev.mysql.com/get/mysql57-community-release-el7-9.noarch.rpm
 yum install wget
 wget https://dev.mysql.com/get/mysql57-community-release-el7-9.noarch.rpm
